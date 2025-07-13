@@ -54,11 +54,23 @@ const StudentClass: StudentConstructor = class StudentClass implements StudentCl
   }
   workOnHomework(): string {
     return "Currently working";
-  }
+  interface printTeacherFunction {
+  (firstName: string, lastName: string): string;
+}}
   displayName(): string {
     return this.firstName;
   }
+};const printTeacher: printTeacherFunction = (firstName, lastName) => {
+  return `${firstName.charAt(0)}. ${lastName}`;
+}interface printTeacherFunction {
+  (firstName: string, lastName: string): string;
+}
+
+const printTeacher: printTeacherFunction = (firstName, lastName) => {
+  return `${firstName.charAt(0)}. ${lastName}`;
 };
+
+console.log(printTeacher("John", "Doe"));;
 
 export { printTeacher, StudentClass };
 >>>>>>> 2bd2e0c58b38cbe07a10536bcd463f7703f8a562
