@@ -1,4 +1,8 @@
 {
+ HEAD
+  "devDependencies": {
+    "typescript": "^5.8.3"
+=======
   "name": "typescript_dependencies",
   "version": "1.0.0",
   "description": "",
@@ -25,8 +29,9 @@
     "ts-jest": "^24.1.0",
     "ts-loader": "^6.2.0",
     "typescript": "^3.6.4",
-    "webpack": "^4.46.0",
+    "webpack": "^4.41.2",
     "webpack-cli": "^3.3.9",
     "webpack-dev-server": "^3.8.2"
+2bd2e0c58b38cbe07a10536bcd463f7703f8a562
   }
 }
