@@ -145,4 +145,16 @@ function executeWork(employee: Director | Teacher): string {
 
 // Test outputs
 console.log(executeWork(createEmployee(200)));    // Getting to work
-console.log(executeWork(createEmployee(1000)));   // Getting to director tasks // Director instanceconsole.log(teachClass("History"));
+console.log(executeWork(createEmployee(1000)));   // Getting to director tasktype Subjects = 'Math' | 'History';
+
+function teachClass(todayClass: Subjects): string {
+  if (todayClass === 'Math') {
+    return 'Teaching Math';
+  } else {
+    return 'Teaching History';
+  }
+}
+
+// Example usage:
+console.log(teachClass('Math'));     // Teaching Math
+console.log(teachClass('History'));  // Teaching Historys // Director instanceconsole.log(teachClass("History"));
